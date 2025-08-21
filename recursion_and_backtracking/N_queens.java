@@ -17,7 +17,7 @@ public class N_Queen {
 			return;
 		}
 		for (int col = 0; col < board.length; col++) {
-			if (issafe(board, row, col)) {
+			if (issafe(board, row, col) == true) {
 				board[row][col] = true;
 				print(board, row + 1, tq - 1);
 				board[row][col] = false;
